@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    console.log("隐藏问题：你能猜出p1的音乐叫什么名字吗？第一个通过邮箱或者神秘代码联系回答正确者有额外奖励(");
+  </script>
+  <style>
+    .text{
+    font-size: 45px;
+    position: relative;
+    text-align: center;
+    vertical-align:middle;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    } 
+    html, body {
+    height: 100%;
+    }
+    </style>
+  <title>2023-Puzzle</title>
+  <link rel="stylesheet" href="https://cdn.w3cbus.com/library/mdui/1.0.2/css/mdui.min.css">
+</head>
+<body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-color-grey-200">
+    <div style="position:relative;top:20%;">
+        <div class="mdui-typo-display-3-opacity mdui-text-center">Puzzles</div>
+        <br><br><br><br><br><br><br>
+        <button class="mdui-btn mdui-color-theme-accent mdui-ripple" mdui-dialog="{target: '#puzzle-1'}" style="left:30%">Puzzle 01</button>
+        <button class="mdui-btn mdui-color-theme-accent mdui-ripple" mdui-dialog="{target: '#puzzle-2'}" style="left:40%;">Puzzle 02</button>
+        <button class="mdui-btn mdui-color-theme-accent mdui-ripple" mdui-dialog="{target: '#puzzle-3'}" style="left:50%;">Puzzle 03</button>
+    </div>
+    <div class="mdui-dialog" id="puzzle-1">
+        <div class="mdui-dialog-title">Puzzle-1</div>
+            <div class="mdui-dialog-content">
+                <div class="mdui-typo">
+                    <p>ppreciate with ur eyes</p>
+                </div>
+            </div>
+            <div class="mdui-dialog-actions">
+            <button class="mdui-btn mdui-ripple" mdui-dialog-close="">关闭</button>
+            <button class="mdui-btn mdui-ripple" mdui-dialog-confirm="" onclick="window.open('01.mp3');">开始</button>
+            </div>
+        </div>
+    </div>
+    <div class="mdui-dialog" id="puzzle-2">
+        <div class="mdui-dialog-title">Puzzle-2</div>
+            <div class="mdui-dialog-content">
+                <div class="mdui-typo">
+                    <p>a manifesto</p>
+                </div>
+            </div>
+            <div class="mdui-dialog-actions">
+            <button class="mdui-btn mdui-ripple" mdui-dialog-close="">关闭</button>
+            <button class="mdui-btn mdui-ripple" mdui-dialog-confirm="" onclick="window.open('02.docx');">开始</button>
+            </div>
+        </div>
+    </div>
+    <div class="mdui-dialog" id="puzzle-3">
+        <div class="mdui-dialog-title">Puzzle-3</div>
+            <div class="mdui-dialog-content">
+                <div class="mdui-typo">
+                    <p>where is it?</p>
+                </div>
+            </div>
+            <div class="mdui-dialog-actions">
+            <button class="mdui-btn mdui-ripple" mdui-dialog-close="">关闭</button>
+            <button class="mdui-btn mdui-ripple" mdui-dialog-confirm="" onclick="window.open('check_txt.jpg');">开始</button>
+            </div>
+        </div>
+    </div>
+        
+        
+    
+
+  <script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    console.log("别问，问就是不会前端，设计不来");
+  </script>
+  <style>
+    .text{
+    font-size: 45px;
+    position: relative;
+    text-align: center;
+    vertical-align:middle;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    } 
+    html, body {
+    height: 100%;
+    }
+    </style>
+  <title>2023-Puzzle</title>
+  <link rel="stylesheet" href="https://cdn.w3cbus.com/library/mdui/1.0.2/css/mdui.min.css">
+</head>
+<body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-color-grey-200">
+    <div style="position:relative;top:30%;">
+        <div class="mdui-typo-display-3-opacity mdui-text-center">Welcome to 2023 Puzzle</div>
+        <br><br><br><br><br>
+        <button class="mdui-btn mdui-color-theme-accent mdui-ripple" mdui-dialog="{target: '#dialog-1'}" style="left:40%">about</button>
+        <button class="mdui-btn mdui-color-theme-accent mdui-ripple" mdui-dialog="{target: '#dialog-2'}" style="left:50%;">start</button>
+    </div>
+    <div class="mdui-dialog" id="dialog-1">
+        <div class="mdui-dialog-title">About</div>
+            <div class="mdui-dialog-content">
+                <div class="mdui-typo">
+                    <ul>
+                      <li>这是什么？</li>
+                      一个解谜红包,完成所有(部分)谜题可以获得一个红包奖励。
+                      <li>为什么会有这个解谜红包？</li>
+                      因为有趣。
+                      <li>如何解决谜题？</li>
+                      发挥你的想象力、利用你的知识以及灵活使用搜索引擎。
+                      <li>谜题是关于什么的？</li>
+                      我不知道。利用你的知识（现学也是足够的）就解决所有题目。
+                      <li>红包奖励是什么？</li>
+                      每解开一个谜题都会获得部分 Flag ，每个部分的 Flag 均对应一个红包，第一个得到完整 Flag 的人将会独享某个红包。
+                      <li>得到解开谜题后如何领取红包？</li>
+                      请参考 Rules 中的相关内容。
+                      <li>我有一些问题，如何联系？</li>
+                      davidsonlily00@gmail.com 或者使用这里的神秘代码 +KNjHuOfTKKJjNmI1
+                    </ul>
+                  </div>
+
+
+            </div>
+        <div class="mdui-dialog-actions">
+          <button class="mdui-btn mdui-ripple" mdui-dialog-close="">OK</button>
+        </div>
+    </div>
+    <div class="mdui-dialog" id="dialog-2">
+        <div class="mdui-dialog-title">Rules</div>
+            <div class="mdui-dialog-content">
+                <div class="mdui-typo">
+                    <ol>
+                        <li>这是一个解谜红包，需要你通过解开每个部分的谜题获得 Flag 来拿到红包。推荐使用非移动设备参与以获得良好的体验</li>
+                        <li>Flag 分为三个部分，对应三道简单的谜题，获得每个谜题对应的 Flag 的碎片也可以作为红包。</li>
+                        <li>Flag 没有特定形式，可能会存在于{}中，也可能仅仅是一个字符。至于是不是 Flag 试试就知道了。</li>
+                        <li>红包的发放形式是通过 支付宝 的口令红包进行发放。如有需要，可在领取前联系，转换成数字人民币红包的形式(仅限完整 Flag 对应的红包)</li>
+                        <li>本次解密共设置4个红包，金额分别为 30 CNY 、30 CNY 、 40 CNY 、 一顿疯狂星期四。</li>
+                        <li>前三个红包的为 Flag 碎片对应的金额，数量由随机数产生。</li>
+                        <li>解谜红包允许多人合作解谜，但是希望由一个人领取，然后再分配。</li>
+                        <li>本次解谜红包从 你看到 开始并持续到 GMT+8 2023.1.18 14:00 ，或直到红包被领取完毕。</li>
+                        <li>本次解谜红包使用 <a href="https://github.com/nwafu-lab/2023-puzzle">Github Pages</a> 进行托管，不需要使用任何扫描爆破手段。</li>
+                        <li>祝大家能有一个愉快的新年。</li>
+                        <li>红包领取样例：假如你是 LiHua ，你得到了一个 Flag 碎片——"kecheng"[1]，你需要做的是使用使用 <a href="https://www.sojson.com/encrypt_md5.html">MD5 函数</a>，得到他的32位全小写哈希值的前八位作为支付宝红包口令，如： b9a119871732e513bee677ff9daa3b0f 的前八位 b9a11987 。</li>
+                    </ol><br>
+                    [1] THUPC 2021 初赛 M 题
+                </div>
+            </div>
+        <div class="mdui-dialog-actions">
+          <button class="mdui-btn mdui-ripple" mdui-dialog-close="">关闭</button>
+          <button class="mdui-btn mdui-ripple" mdui-dialog-confirm="" onclick="window.open('puzzle.html');">我知道了，开始吧。</button>
+        </div>
+    </div>
+
+  <script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script>
+</body>
+</html>
